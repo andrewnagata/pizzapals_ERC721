@@ -1,0 +1,17 @@
+dependencies:
+  # - <organization/repo>@<version>
+  - OpenZeppelin/openzeppelin-contracts@4.5.0
+compiler:
+  solc:
+    remappings:
+      - "@openzepplin=OpenZeppelin/openzeppelin-contracts@4.5.0"
+dotenv: .env
+networks:
+  development:
+    verify: False
+  ganache-local:
+    verify: False
+  rinkeby_alch:
+    verify: True
+wallets:
+  from_key: ${PRIVATE_KEY}
